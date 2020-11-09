@@ -14,7 +14,7 @@ Install the dependencies:
 cd hatsune
 npm install
 ```
-Edit [config](config.js):
+Edit [config](src/config.js):
 ```js
 class Config {
   token = 'YOUR-TOKEN-GOES-HERE'
