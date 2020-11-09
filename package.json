@@ -1,0 +1,16 @@
+{
+    "name": "hatsune",
+    "version": "1.0.0",
+    "description": "An anime discord bot made with discord.js!",
+    "main": "src/bot.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Irian3x3",
+    "license": "MIT",
+    "dependencies": {
+        "discord.js": "^12.3.1",
+        "ms": "^2.1.2",
+        "node-fetch": "^2.6.1"
+    }
+}
