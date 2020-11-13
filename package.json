@@ -2,7 +2,7 @@
     "name": "hatsune",
     "version": "1.0.0",
     "description": "An anime discord bot made with discord.js!",
-    "main": "src/bot.js",
+    "main": "src/bot.ts",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },

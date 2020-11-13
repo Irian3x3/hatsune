@@ -10,14 +10,18 @@ module.exports = {
         const em = new d.MessageEmbed()
         .setAuthor(`${bot.user.username} Information`, `${bot.user.displayAvatarURL({format:`png`})}`)
         .setColor('RANDOM')
-        .setDescription(`Hello! I'm Hatsune Miku, an ${package.description.slice(3)}`)
+        .setDescription(`Hello! I'm Hatsune Miku, an ${package.description.slice(3)} I am made by \`${bot.users.cache.get("720021153594343526").tag}\`.`)
         .addFields(
-            {
-                name: "**Stats**", value: `**Servers**: \`${bot.guilds.cache.size}\`\n**Total Users**: \`${bot.users.cache.size}\``, inline: true,
-            },
-            {
-                name: "**Versions**", value: `**Node.JS**: v12.18.3\n**Discord.JS**: v${package.dependencies["discord.js"].slice(1)}`, inline: true,
-            })
+                    {
+                        name: "**Stats**", value: `**Servers**: \`${bot.guilds.cache.size}\`\n**Total Users**: \`${bot.users.cache.size}\``, inline: true,
+                    },
+                    {
+                        name: "**Versions**", value: `**Node.JS**: v12.18.3\n**Discord.JS**: v${package.dependencies["discord.js"].slice(1)}`, inline: true,
+                    },
+                    {
+                        name: "**Links**", value: `**[GitHub](https://github.com/Irian3x3/hatsune)** | **[Invite](http://gg.gg/hatsune)**`, inline: false
+                    }
+                )
         message.channel.send(em);
     }
 };
