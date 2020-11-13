@@ -27,7 +27,7 @@ bot.on('ready', async () => {
 
 bot.on('message', async message => {
     if (!message.content.startsWith(config.prefix)) return;
-
+    
     const args = message.content.slice(config.prefix.length).trim().split(/ +/);
     const cmd = args.shift().toLowerCase();
     
@@ -44,7 +44,8 @@ bot.on('message', async message => {
 });
 
 bot.on('guildCreate', async guild => {
-    let chn = bot.channels.cache.get('749620080094216212');
+    if(!config.newGuildChannelID) return;
+    let chn = bot.channels.cache.get(config.newGuildChannelID);
     const em = new discord.MessageEmbed()
     .setAuthor(`Important, I have just been added to a guild.`, `https://cdn.discordapp.com/emojis/536987777372258339.png`)
     .setThumbnail(`${guild.iconURL({format:`png`,dynamic:true})}`)
