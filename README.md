@@ -1,4 +1,7 @@
 # Hatsune
+###### *Note: this code is deprecated*
+
+---
 Hatsune is a discord bot based on anime, built with discord.js.  
 It is open source and you may use its code.
 
